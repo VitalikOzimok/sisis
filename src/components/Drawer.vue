@@ -42,7 +42,7 @@ const ButtonDisabled = computed(() => isCreatingOrder.value || cartIsEmpty.value
 <template>
   <div>
     <div @click="closeDrawer" class="fixed left-0 z-10 top-0 h-full w-full bg-black opacity-70" />
-    <div class="bg-white w-96 h-full fixed right-0 top-0 z-20 p-8">
+    <div class="bg-gradient-to-r from-cyan-300 to-blue-100 w-96 h-full fixed right-0 top-0 z-20 p-8">
       <DrawerHead />
 
       <div v-if="!totalPrice || orderId" class="flex h-full items-center">
