@@ -51,7 +51,7 @@ provide('cart', {
     <Drawer v-if="drawerOpen" :total-price="totalPrice" :vatPrice="vatPrice" />
 
     <div
-      class="bg-orange-200 w-4/5 m-auto h-screen border border-red-500 rounded-xl shadow-xl mt-14"
+      class="bg-gradient-to-r from-cyan-100 to-blue-300 w-4/5 m-auto h-screen border border-red-500 rounded-xl shadow-xl mt-14"
     >
       <One :total-price="totalPrice" @open-drawer="openDrawer" />
       <RouterView />
